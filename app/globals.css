@@ -84,19 +84,28 @@
 /* Glass Morphism Effects */
 @layer components {
   .glass-morphism {
-    @apply bg-white/70 dark:bg-gray-900/70 backdrop-blur-md border border-white/20 dark:border-gray-700/30 shadow-lg shadow-black/5 dark:shadow-black/20;
+    @apply bg-white/70 dark:bg-gray-900/70
+           backdrop-blur-md
+           border border-white/20 dark:border-gray-700/30
+           shadow-lg shadow-black/5 dark:shadow-black/20;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
   }
   
   .glass-morphism-elevated {
-    @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border border-white/30 dark:border-gray-700/40 shadow-xl shadow-black/10 dark:shadow-black/30;
+    @apply bg-white/80 dark:bg-gray-900/80
+           backdrop-blur-xl
+           border border-white/30 dark:border-gray-700/40
+           shadow-xl shadow-black/10 dark:shadow-black/30;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
   }
   
   .glass-morphism-subtle {
-    @apply bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm border border-white/10 dark:border-gray-700/20 shadow-md shadow-black/5 dark:shadow-black-500/15;
+    @apply bg-white/50 dark:bg-gray-900/50
+           backdrop-blur-sm
+           border border-white/10 dark:border-gray-700/20
+           shadow-md shadow-black/5 dark:shadow-black/15;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }
@@ -104,7 +113,9 @@
 
 /* Smooth transitions for theme changes */
 * {
-  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              color 0.3s ease;
 }
 
 /* Enhanced focus styles for accessibility */
@@ -149,34 +160,18 @@
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 @keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes scaleIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
 /* Ensure proper contrast for glass morphism text */
