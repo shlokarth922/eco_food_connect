@@ -96,7 +96,7 @@
   }
   
   .glass-morphism-subtle {
-    @apply bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm border border-white/10 dark:border-gray-700/20 shadow-md shadow-black/5 dark:shadow-black/15;
+    @apply bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm border border-white/10 dark:border-gray-700/20 shadow-md shadow-black/5 dark:shadow-black-500/15;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }
